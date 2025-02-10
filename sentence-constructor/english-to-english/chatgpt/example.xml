@@ -1,0 +1,109 @@
+<example>
+    <user:input>
+        Bears are at the door, did you leave the garbage out?
+    </user:input>
+    <score>4</score>
+    <score_reasons>
+        <reason>BAD: The vocabulary table did not show the English words correctly; some cells were blank.</reason>
+        <reason>BAD: The beginner sentence is unnecessary; the vocabulary table should be presented immediately.</reason>
+        <reason>BAD: The clues should not provide the correct verb tenses; the student must figure that out.</reason>
+        <reason>BAD: The sentence structure explanation was too detailed. It should be conceptual, like: [Location] [Subject] [Verb], [Object] [Verb-past]?</reason>
+    </score_reasons>
+    <assistant:output>
+        Let's break down the sentence into smaller parts. Here's a possible table of vocabulary to get you started:
+
+        <vocabulary>
+            <word>
+                <native>bear</native>
+                <ipa>/bɛər/</ipa>
+                <meaning>A large wild animal</meaning>
+            </word>
+            <word>
+                <native>door</native>
+                <ipa>/dɔːr/</ipa>
+                <meaning>An entrance to a building</meaning>
+            </word>
+            <word>
+                <native>garbage</native>
+                <ipa>/ˈɡɑːr.bɪdʒ/</ipa>
+                <meaning>Waste or trash</meaning>
+            </word>
+            <word>
+                <native>leave</native>
+                <ipa>/liːv/</ipa>
+                <meaning>To abandon or forget something</meaning>
+            </word>
+        </vocabulary>
+
+        Now, let's think about the sentence structure. We have two clauses: 
+        "Bears are at the door" and "Did you leave the garbage out?" 
+
+        For the first clause, we need a verb that expresses existence.
+        For the second clause, we need a past-tense verb form.
+
+        <sentence_structure>
+            [Location] [Subject] [Verb], [Object] [Verb-past]?
+        </sentence_structure>
+
+        Your turn! Try filling in the blanks using the vocabulary and sentence structure provided.
+    </assistant:output>
+</example>
+
+<example>
+    <user:input>
+        Bears are at the door, did you leave the garbage out?
+    </user:input>
+    <score>10</score>
+    <score_reasons>
+        <reason>GOOD: Doesn't provide verbose text at the start and immediately presents the vocabulary.</reason>
+        <reason>GOOD: Uses a conceptual sentence structure instead of detailed explanations.</reason>
+        <reason>GOOD: Clues do not reveal verb tenses or conjugations.</reason>
+    </score_reasons>
+    <assistant:output>
+        <cheatsheet>
+            <word>
+                <english>bear</english>
+                <ipa>/bɛər/</ipa>
+                <type>Noun</type>
+            </word>
+            <word>
+                <english>door</english>
+                <ipa>/dɔːr/</ipa>
+                <type>Noun</type>
+            </word>
+            <word>
+                <english>garbage</english>
+                <ipa>/ˈɡɑːr.bɪdʒ/</ipa>
+                <type>Noun</type>
+            </word>
+            <word>
+                <english>to be (location)</english>
+                <ipa>/biː/</ipa>
+                <type>Verb</type>
+            </word>
+            <word>
+                <english>to leave</english>
+                <ipa>/liːv/</ipa>
+                <type>Verb</type>
+            </word>
+        </cheatsheet>
+
+        <sentence_structure>
+            [Location] [Subject] [Verb], [Object] [Verb-past]?
+        </sentence_structure>
+
+        <considerations>
+            <point>This is a compound sentence with two parts connected by a comma.</point>
+            <point>The first part describes a location where something exists.</point>
+            <point>The second part asks about a past action.</point>
+        </considerations>
+
+        <possible_next_steps>
+            <step>Attempt an answer.</step>
+            <step>Ask for clues about location marking.</step>
+            <step>Ask for clues about how to connect two sentences.</step>
+            <step>Ask for clues about question formation.</step>
+            <step>Ask for clues about verb conjugation.</step>
+        </possible_next_steps>
+    </assistant:output>
+</example>
